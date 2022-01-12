@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="380dp"
+    android:layout_height="500dp"
+    android:background="@drawable/icegame_roulette_bg">
+
+    <ImageView
+        android:id="@+id/img_roulette_panel"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/roulette_panel"
+        />
+
+    <ImageView
+        android:id="@+id/img_roulette_arrow"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/roulette_arrow"
+        />
+
+    <ImageView
+        android:id="@+id/imgbtn_roulette_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="370dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/roulette_start"
+        />
+
+</RelativeLayout>

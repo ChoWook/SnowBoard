@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/snowboard_bg"
+    >
+
+    <ImageView
+        android:id = "@+id/snowboardLogo"
+        android:layout_width="280dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:src = "@drawable/snowboard_logo"/>
+
+    <ImageView
+        android:id = "@+id/enter_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/snowboardLogo"
+        android:layout_marginTop="15dp"
+        android:src = "@drawable/login_id"
+        />
+
+    <EditText
+        android:id = "@+id/edit_id"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/snowboardLogo"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="125dp"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:background="@null"
+        />
+
+    <ImageView
+        android:id = "@+id/enter_pw"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/enter_id"
+        android:layout_marginTop="20dp"
+        android:src = "@drawable/login_pw"/>
+
+    <EditText
+        android:id="@+id/edit_pw"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/snowboardLogo"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="125dp"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:inputType="textPassword"
+        android:background="@null"/>
+
+    <ImageButton
+        android:id = "@+id/btn_login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/enter_pw"
+        android:src = "@drawable/login_login"
+        android:layout_marginTop="20dp"
+        android:background="#00000000"/>
+
+    <ImageButton
+        android:id = "@+id/btn_register"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="20dp"
+        android:src = "@drawable/login_register"
+        android:background="#00000000"/>
+
+
+    <ProgressBar
+        android:id="@+id/pbLogIn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

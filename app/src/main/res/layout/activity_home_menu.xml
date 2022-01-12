@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeMenuActivity"
+    android:background="@drawable/snowboard_bg">
+
+
+
+    <ImageView
+        android:id = "@+id/snowboardLogo"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="80dp"
+        android:src = "@drawable/snowboard_logo"/>
+
+
+    <ImageButton
+        android:id = "@+id/btn_make_room"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/snowboardLogo"
+        android:layout_marginTop="15dp"
+        android:src = "@drawable/main_makeroom"
+        android:background="#00000000"
+        />
+
+
+    <ImageButton
+        android:id = "@+id/btn_enter_room"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_make_room"
+        android:src = "@drawable/main_enter"
+        android:layout_marginTop="20dp"
+        android:background="#00000000"/>
+
+
+    <ImageButton
+        android:id = "@+id/btn_tutorial"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_enter_room"
+        android:layout_marginTop="20dp"
+        android:src = "@drawable/main_howto"
+        android:background="#00000000"/>
+
+
+</RelativeLayout>

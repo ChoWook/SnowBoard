@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@drawable/waiting_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+        <ImageView
+            android:id="@+id/img_waiting_logo"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="45dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icegame_logo" />
+
+        <TextView
+            android:id = "@+id/txt_room_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_waiting_logo"
+            android:text="여기여기모여라"
+            android:textSize="23dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/jua"
+            android:layout_marginLeft="6dp"/>
+
+
+        <ImageButton
+            android:id="@+id/imgbtn_room_enter"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/waiting_enter"
+            android:background="#00000000"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:id="@+id/img_room_lock"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="48dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/waiting_lock" />
+
+        <TextView
+            android:id="@+id/txt_people_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="55dp"
+            android:text="3"
+            android:textSize="14dp"
+            android:layout_marginLeft="4dp"/>
+
+        <ImageView
+            android:id="@+id/img_room_person"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/person"
+            android:layout_toLeftOf="@+id/txt_people_num"/>
+
+        <TextView
+            android:id="@+id/txt_room_master"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/img_room_person"
+            android:layout_centerVertical="true"
+            android:text="@string/who_made"
+            android:textSize="12dp"
+            android:layout_marginRight="10dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

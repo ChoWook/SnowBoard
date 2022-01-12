@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Snow Board</string>
+    <string name="who_made">홍길동</string>
+
+    // Make Room Dlg
+    <string name="make_room">방 만들기</string>
+
+    <string name="room_title">방 제목</string>
+    <string name="edit_room_title">방 제목</string>
+
+    <string name="room_pwd">비밀번호 </string>
+    <string name="room_input_pwd">비밀번호 입력</string>
+
+    <string name="game_type">게임종류 </string>
+    // Make Room Dlg End
+
+    // 다빈치 가이드 스트링
+    <string name="player_turn">플레이어의 턴입니다. 가져갈 블록을 선택하세요</string>
+    <string name="guessing_anyone">P가 추리하는 중입니다</string>
+
+    <string name="guess_block">위의 숫자를 생각하는 숫자로 바꾼 후 블럭을 클릭하세요</string>
+    <string name="guess_choice">계속 추리할지 선택하세요</string>
+    // 다빈치 가이드 스트링 끝
+</resources>

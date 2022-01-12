@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IceGameActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#2E3436"
+    android:id="@+id/layout_ice_game">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="15dp">
+        <TableRow>
+            <RelativeLayout
+                android:id="@+id/img_ice_player_1p"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:visibility="invisible">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:src="@drawable/img_1p"/>
+                <TextView
+                    android:id="@+id/txt_ice_player_1p_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="txt_ice_player_1p_name"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="13dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/img_ice_player_2p"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:visibility="invisible">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:src="@drawable/img_2p"/>
+                <TextView
+                    android:id="@+id/txt_ice_player_2p_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="txt_ice_player_1p_name"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="13dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/img_ice_player_3p"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:visibility="invisible">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:src="@drawable/img_3p"/>
+                <TextView
+                    android:id="@+id/txt_ice_player_3p_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="txt_ice_player_3p_name"
+                    android:textSize="10dp"
+                    android:layout_marginLeft="52dp"
+                    android:layout_marginTop="13dp"/>
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow>
+            <ImageView
+                android:id="@+id/img_ice_turn_arrow_1p"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:src="@drawable/arrow"
+                android:visibility="invisible"/>
+            <ImageView
+                android:id="@+id/img_ice_turn_arrow_2p"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:src="@drawable/arrow"
+                android:visibility="invisible"/>
+            <ImageView
+                android:id="@+id/img_ice_turn_arrow_3p"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:src="@drawable/arrow"
+                android:visibility="invisible"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            >
+            <ImageView
+                android:id="@+id/img_turn_what_1p"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:src="@drawable/roulette_white"
+                android:visibility="invisible"/>
+            <ImageView
+                android:id="@+id/img_turn_what_2p"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:src="@drawable/roulette_blue"
+                android:visibility="invisible"/>
+            <ImageView
+                android:id="@+id/img_turn_what_3p"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:src="@drawable/roulette_all"
+                android:visibility="invisible"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+    <!-- icegame ground -->
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="550dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/icegame_ground">
+
+
+        <!-- icegame 블럭 총 9행 -->
+        <RelativeLayout
+            android:layout_width="336dp"
+            android:layout_height="520dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal">
+
+
+            <!-- 1행 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <!-- 1x1 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_01"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- 2행 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="48dp">
+
+
+                <!-- 2x1 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_02"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"/>
+
+                <!-- 2x2 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_03"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_white_ice"/>
+
+                <!-- 2x3 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_04"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"/>
+
+                <!-- 2x4 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_05"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_white_ice"/>
+
+            </LinearLayout>
+
+
+
+            <!-- 3행 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="96dp">
+
+                <!-- 3x1 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_06"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"/>
+
+                <!-- 3x2 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_07"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_white_ice"/>
+
+                <!-- 3x3 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_08"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"/>
+
+                <!-- 3x4 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_09"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_white_ice"/>
+
+                <!-- 3x5 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_10"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"/>
+            </LinearLayout>
+
+
+            <!-- 4행 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="144dp">
+
+
+                <!-- 4x1 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_11"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_white_ice"/>
+
+                <!-- 4x2 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_12"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"/>
+
+                <!-- 4x3 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_13"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_white_ice"/>
+
+                <!-- 4x4 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_14"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_white_ice"/>
+
+                <!-- 4x5 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_15"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"/>
+
+                <!-- 4x6 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_16"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_white_ice"/>
+
+            </LinearLayout>
+
+            <!-- 5행 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="192dp">
+
+                <!-- 5x1 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_17"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_white_ice"/>
+
+                <!-- 5x2 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_18"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_white_ice"/>
+
+                <!-- 5x3 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_19"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"/>
+
+                <!-- 5x4 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_20"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"/>
+
+                <!-- 5x5 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_21"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"/>
+
+            </LinearLayout>
+
+
+
+            <!-- 펭귄 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="150dp">
+
+                <ImageView
+                    android:id="@+id/img_ice_penguin"
+                    android:layout_width="75dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/icegame_penguin"
+                    android:visibility="visible"/>
+            </LinearLayout>
+
+
+            <!-- 6행 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="240dp">
+
+
+                <!-- 6x1 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_22"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_white_ice"/>
+
+                <!-- 6x2 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_23"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"/>
+
+                <!-- 6x3 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_24"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_white_ice"/>
+
+                <!-- 6x4 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_25"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"/>
+
+                <!-- 6x5 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_26"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_white_ice"/>
+
+                <!-- 6x6 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_27"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_white_ice"/>
+
+            </LinearLayout>
+
+
+            <!-- 7행 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="288dp">
+
+                <!-- 7x1 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_28"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_white_ice"/>
+
+                <!-- 7x2 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_29"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"/>
+
+                <!-- 7x3 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_30"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_white_ice"/>
+
+                <!-- 7x4 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_31"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"/>
+
+                <!-- 7x5 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_32"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"/>
+
+            </LinearLayout>
+
+
+
+            <!-- 8행 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="336dp">
+
+                <!-- 8x1 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_33"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"/>
+
+                <!-- 8x2 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_34"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_white_ice"/>
+
+                <!-- 8x3 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_35"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"/>
+
+                <!-- 8x4 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_36"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_white_ice"/>
+
+            </LinearLayout>
+
+
+
+            <!-- 9행 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="384dp">
+
+                <!-- 9x1 -->
+                <ImageView
+                    android:id="@+id/img_ice_block_37"
+                    android:layout_width="56dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icegame_blue_ice"/>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/img_ice_start_ready"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="130dp"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
